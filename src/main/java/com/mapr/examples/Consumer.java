@@ -93,6 +93,6 @@ public class Consumer {
                         throw new IllegalStateException("Shouldn't be possible to get message on topic " + record.topic());
                 }
             }
-        }
+        }   
     }
 }
