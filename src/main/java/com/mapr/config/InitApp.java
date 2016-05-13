@@ -3,6 +3,7 @@ package com.mapr.config;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
+import com.mapr.examples.RedisPoolTest;
 import com.mapr.examples.RedisTest;
 
 import redis.clients.jedis.Jedis;
@@ -17,6 +18,9 @@ public class InitApp {
 		
 		RedisTest rTest = (RedisTest) ctx.getBean("redisTest");
 		rTest.stringtest();
+		
+		RedisPoolTest rPoolTest = (RedisPoolTest) ctx.getBean("redisPoolTest");
+		rPoolTest.test();
 		ctx.close();
 	}
 

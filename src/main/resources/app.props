@@ -1,0 +1,2 @@
+redis.url="redis://192.168.56.103:6379"
+redis.authurl="redis://:hello@192.168.56.103:6379"
